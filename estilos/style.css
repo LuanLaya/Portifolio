@@ -1,0 +1,309 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Corpo do site */
+body {
+    background-color: #000000;
+    background-image: radial-gradient(circle at center, #1e293b 0%, #000000 70%);
+    color: #f1f5f9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #f1f5f9, #94a3b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#sobre {
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o container na página */
+}
+
+.sobre-container {
+    max-width: 700px; /* Largura ideal para leitura */
+    text-align: center;
+}
+
+#sobre h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #f1f5f9;
+    letter-spacing: 1px;
+}
+
+#sobre p {
+    font-size: 1.1rem;
+    line-height: 1.8; /* Aumenta o espaço entre linhas para não ficar sufocado */
+    color: #94a3b8;
+    text-align: justify; /* Deixa o bloco de texto alinhado nas laterais */
+    text-align-last: center; /* Garante que a última linha fique no centro */
+}
+
+#sobre strong {
+    color: #3b82f6; /* Azul que você já usa nos títulos */
+    font-weight: 600;
+}
+
+#inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center;     /* Centraliza horizontalmente */
+    text-align: center;
+    min-height: 100vh;       /* Faz a seção ocupar a tela toda */
+    padding: 0 20px;
+}
+
+#inicio h2 {
+    font-size: 3.5rem;       /* Aumentei um pouco para dar destaque */
+    margin-bottom: 15px;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#inicio p {
+    font-size: 1.2rem;
+    color: #94a3b8;
+    max-width: 600px;        /* Evita que o texto fique largo demais */
+    margin-bottom: 30px;
+}
+
+#habilidades {
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    /* Em vez de 1fr, usamos min-content para o card não esticar */
+    grid-template-columns: repeat(3, min-content); 
+    /* Centraliza o grupo de cards no meio da tela */
+    justify-content: center; 
+    /* Define o espaço exato entre os cards */
+    gap: 30px; 
+    margin-top: 40px;
+}
+
+.skill-card {
+    background-color: #0f0f0f;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #1a1a1a;
+    text-align: center;
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 160px; 
+}
+
+.skill-card img {
+    width: 50px;
+    height: 50px;
+}
+
+.skill-card h3 {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* Efeito de aumento comum a todos */
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+.skill-card.html-card:hover {
+    border-color: #E44D26; /* Laranja */
+    box-shadow: 0 0 20px rgba(228, 77, 38, 0.2);
+}
+
+.skill-card.css-card:hover {
+    border-color: #264de4; /* Azul */
+    box-shadow: 0 0 20px rgba(38, 77, 228, 0.2);
+}
+
+.skill-card.js-card:hover {
+    border-color: #F7DF1E; /* Amarelo */
+    box-shadow: 0 0 20px rgba(247, 223, 30, 0.2);
+}
+
+.skill-card.mysql-card:hover {
+    border-color: #00758F; /* Ciano */
+    box-shadow: 0 0 20px rgba(0, 117, 143, 0.2);
+}
+
+.skill-card.csharp-card:hover {
+    border-color: #68217A; /* Roxo */
+    box-shadow: 0 0 20px rgba(104, 33, 122, 0.2);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.projetos-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Isso joga o card para baixo em telas pequenas */
+}
+
+.card {
+    background: rgba(15, 15, 15, 0.8); /* Fundo escuro levemente transparente */
+    backdrop-filter: blur(10px);        /* Efeito de desfoque no fundo */
+    border: 1px solid #1a1a1a;
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    border-color: #733bf6; /* Brilha no azul quando passa o mouse */
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #94a3b8;
+}
+
+.btn-card {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 16px;
+    border: 1px solid #733bf6;
+    color: #733bf6;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn-card:hover {
+    background: #733bf6;
+    color: white;
+}
+
+#contato {
+    text-align: center;
+}
+
+.contato-links {
+    margin-top: 20px;
+}
+
+.contato-links a {
+    margin: 0 10px;
+    color: #733bf6;
+    text-decoration: none;
+    border: 1px solid #733bf6;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+.contato-links a:hover {
+    background: #733bf6;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsividade: O que muda em telas menores */
+@media (max-width: 768px) {
+    #inicio h2 {
+        font-size: 28px;
+    }
+
+    /* Ajuste das skills para tablets/celulares grandes */
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr); /* Passa para 2 por linha */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajuste das skills para celulares pequenos */
+    .skills-grid {
+        grid-template-columns: 1fr; /* 1 por linha para não esmagar os ícones */
+    }
+}
+
+footer {
+    padding: 40px 20px;
+    border-top: 1px solid #1a1a1a; /* Linha sutil para separar do resto do site */
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-content p {
+    color: #64748b; /* Um cinza mais escuro para não distrair */
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+.footer-content p:last-child {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0; /* Começa invisível */
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+#backToTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#backToTop:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
