@@ -1,6 +1,7 @@
 # Portfólio Pessoal - Luan Laya
 
 Este é o meu portfólio pessoal, desenvolvido para apresentar meus projetos e habilidades técnicas. Sou um desenvolvedor em formação com foco principal em **Back-end**.
+Para acessar o Portifólio:https://luanlaya.github.io/Portifolio/
 
 ## 🚀 Tecnologias Utilizadas
 * **Front-end:** HTML5, CSS3 e JavaScript.
