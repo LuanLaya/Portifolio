@@ -3,111 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
-    <title>Meu portifólio</title>
+    <title>Luan Laya — Desenvolvedor</title>
 </head>
 <body>
-        <main>
-            <section id="inicio">
-                <h2>Luan Laya Thompson</h2> <p>Desenvolvedor em formação focado em criar sites modernos e experiências únicas.</p>
-                 <a href="#projetos" class="btn">Ver projetos</a>
-            </section>
 
-            <section id="sobre">
-                <div>
-                    <h2>Sobre mim</h2>
-                    <p>Me chamo Luan, tenho 19 anos e iniciei minha jornada na programação no começo de 2024. 
-                    Foquei meus estudos no <strong>Back-end</strong>, onde descobri minha paixão por lógica 
-                    e estruturação de dados. Atualmente, estou em busca de uma oportunidade para aplicar 
-                    meus conhecimentos, enfrentar novos desafios e evoluir profissionalmente como desenvolvedor.</p>
+    <nav id="navbar">
+        <div class="nav-inner">
+            <span class="nav-logo">LL</span>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Abrir menu">☰</button>
+        </div>
+    </nav>
+
+    <main>
+        <section id="inicio">
+            <div class="inicio-content">
+                <p class="eyebrow">Desenvolvedor Back-end</p>
+                <h1>Luan Laya<br><span class="name-accent">Thompson</span></h1>
+                <p class="intro-desc">Focado em criar soluções sólidas, com atenção à lógica e estruturação de dados.</p>
+                <div class="inicio-btns">
+                    <a href="#projetos" class="btn">Ver projetos</a>
+                    <a href="#contato" class="btn btn-outline">Entrar em contato</a>
                 </div>
-            </section>
+            </div>
+            <div class="scroll-hint">↓</div>
+        </section>
 
-            <section id="habilidades">
-                <h2>Tecnologias e Linguagens</h2>
-                <div class="skills-grid">
-                    <div class="skill-card html-card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
-                        <h3 class="html">HTML5</h3>
-                    </div>
+        <section id="sobre">
+            <div class="sobre-container">
+                <h2>Sobre mim</h2>
+                <p>Me chamo Luan, tenho 19 anos e iniciei minha jornada na programação no começo de 2024. 
+                Foquei meus estudos no <strong>Back-end</strong>, onde descobri minha paixão por lógica 
+                e estruturação de dados. Atualmente, estou em busca de uma oportunidade para aplicar 
+                meus conhecimentos, enfrentar novos desafios e evoluir profissionalmente como desenvolvedor.</p>
+            </div>
+        </section>
 
-                    <div class="skill-card css-card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
-                        <h3 class="css">CSS3</h3>
-                    </div>
-
-                    <div class="skill-card js-card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">
-                        <h3 class="js">JavaScript</h3>
-                    </div>
-
-                    <div class="skill-card mysql-card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
-                        <h3 class="mysql">MySQL</h3>
-                    </div>
-
-                    <div class="skill-card csharp-card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
-                        <h3 class="csharp">C#</h3>
-                    </div>
+        <section id="habilidades">
+            <h2>Tecnologias e Linguagens</h2>
+            <div class="skills-grid">
+                <div class="skill-card html-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                    <h3>HTML5</h3>
                 </div>
-            </section>
+                <div class="skill-card css-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-card js-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card mysql-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                    <h3>MySQL</h3>
+                </div>
+                <div class="skill-card csharp-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
+                    <h3>C#</h3>
+                </div>
+            </div>
+        </section>
 
-            <section id="projetos">
-                 <h2>Meus Projetos</h2>
-                <div class="projetos-container">
-                    <div class="card">
+        <section id="projetos">
+            <h2>Meus Projetos</h2>
+            <div class="projetos-container">
+                <div class="card">
+                    <div class="card-thumb barbershop-thumb">
+                        <span class="card-icon">✂️</span>
+                    </div>
+                    <div class="card-body">
                         <h3>Site de Barbearia</h3>
                         <p>Projeto de um site moderno para barbearia com agendamento.</p>
-                        <a href="#" class="btn-card">Ver mais</a>
+                        <div class="card-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JS</span>
+                        </div>
+                        <a href="#" class="btn-card">Ver mais →</a>
                     </div>
+                </div>
 
-                    <div class="card">
+                <div class="card">
+                    <div class="card-thumb cars-thumb">
+                        <span class="card-icon">🚗</span>
+                    </div>
+                    <div class="card-body">
                         <h3>Site de Carros</h3>
                         <p>Catálogo de carros com design moderno e responsivo.</p>
-                        <a href="#" class="btn-card">Ver mais</a>
+                        <div class="card-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JS</span>
+                        </div>
+                        <a href="#" class="btn-card">Ver mais →</a>
                     </div>
                 </div>
-            </section>
-
-            <section id="contato">
-                <h2>Contato</h2>
-                <p>Entre em contato comigo:</p>
-
-                <div class="contato-links">
-                    <a href="#">Email</a>
-                    <a href="https://github.com/LuanLaya" target="_blank">GitHub</a>
-                    <a href="https://www.linkedin.com/in/luan-laya-369678358/" target="_blank">LinkedIn</a>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <div class="footer-content">
-                <p>&copy; Luan Laya Thompson. Todos os direitos reservados.</p>
-                <p>Desenvolvido com foco em Back-end e Performance.</p>
             </div>
+        </section>
 
-            <a href="#inicio" id="backToTop" title="Voltar ao topo">
-    <i class="fas fa-arrow-up"></i> ↑
-</a>
-        </footer>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato comigo:</p>
+            <div class="contato-links">
+                <a href="#">Email</a>
+                <a href="https://github.com/LuanLaya" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/luan-laya-369678358/" target="_blank">LinkedIn</a>
+            </div>
+        </section>
+    </main>
 
-        <script>
-            // Seleciona o elemento ou apenas injeta o ano atual
-            document.querySelector('footer p').innerHTML = `&copy; ${new Date().getFullYear()} Luan Laya Thompson. Todos os direitos reservados.`;
+    <footer>
+        <div class="footer-content">
+            <p></p>
+            <p>Desenvolvido com foco em Back-end e Performance.</p>
+        </div>
+        <a href="#inicio" id="backToTop" title="Voltar ao topo">↑</a>
+    </footer>
 
-            
-            const backToTopButton = document.querySelector("#backToTop");
+    <script>
+        // Ano no footer
+        document.querySelector('.footer-content p').innerHTML =
+            `&copy; ${new Date().getFullYear()} Luan Laya Thompson. Todos os direitos reservados.`;
 
-            window.addEventListener("scroll", () => {
-                if (window.pageYOffset > 300) {
-                    backToTopButton.classList.add("show");
-                } else {
-                    backToTopButton.classList.remove("show");
+        // Botão voltar ao topo
+        const backToTopButton = document.querySelector("#backToTop");
+        window.addEventListener("scroll", () => {
+            backToTopButton.classList.toggle("show", window.pageYOffset > 300);
+        });
+
+        // Navbar: esconde/mostra ao rolar
+        const navbar = document.querySelector("#navbar");
+        let lastScroll = 0;
+        window.addEventListener("scroll", () => {
+            const current = window.pageYOffset;
+            if (current > lastScroll && current > 80) {
+                navbar.classList.add("hidden");
+            } else {
+                navbar.classList.remove("hidden");
+            }
+            lastScroll = current;
+            navbar.classList.toggle("scrolled", current > 50);
+        });
+
+        // Menu mobile toggle
+        document.querySelector(".nav-toggle").addEventListener("click", () => {
+            document.querySelector(".nav-links").classList.toggle("open");
+        });
+
+        // Fecha menu ao clicar em link
+        document.querySelectorAll(".nav-links a").forEach(link => {
+            link.addEventListener("click", () => {
+                document.querySelector(".nav-links").classList.remove("open");
+            });
+        });
+
+        // Highlight link ativo no scroll
+        const sections = document.querySelectorAll("section[id]");
+        const navLinks = document.querySelectorAll(".nav-links a");
+        window.addEventListener("scroll", () => {
+            let current = "";
+            sections.forEach(section => {
+                if (window.pageYOffset >= section.offsetTop - 120) {
+                    current = section.getAttribute("id");
                 }
             });
-
-        </script>
+            navLinks.forEach(link => {
+                link.classList.toggle("active", link.getAttribute("href") === `#${current}`);
+            });
+        });
+    </script>
 </body>
 </html>
